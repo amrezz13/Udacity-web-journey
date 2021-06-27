@@ -1,15 +1,18 @@
 /*
- * Programming Quiz: Writing a For...of Loop (1-4)
+ * Programming Quiz: Using the Rest Parameter (1-5)
  */
 
-const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-
-
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-  
 // your code goes here
-for (let day of days){
-    console.log(capitalizeFirstLetter(day));
+function average(...nums) {
+    let sum =0;
+
+    for( let num of nums){
+        sum += num;
+    }    
+    return sum/nums.length;
 }
+
+console.log(average(2, 6));
+console.log(average(2, 3, 3, 5, 7, 10));
+console.log(average(7, 1432, 12, 13, 100));
+console.log(average());
