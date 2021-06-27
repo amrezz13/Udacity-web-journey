@@ -32,6 +32,5 @@ function createAnimalTradingCardHTML(animal) {
 
     return cardHTML;
 }
-document.write(createAnimalTradingCardHTML(cheetah));
 
 console.log(createAnimalTradingCardHTML(cheetah));
