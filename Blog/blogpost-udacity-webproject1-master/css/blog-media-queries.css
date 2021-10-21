@@ -1,0 +1,75 @@
+/*  XSMALL & SMALL DEVICES   */
+@media (min-width: 320px) and (max-width: 598px) {
+  .blog-wrapper {
+    grid-template-columns: 280px;
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar"
+      "footer";
+    font-size: 0.8em;
+  }
+
+  .sidebar {
+    margin-top: 2em;
+  }
+
+  .slideshow-container {
+    margin-bottom: 5em;
+  }
+
+  .text {
+    font-size: 0.8em;
+  }
+
+  .dot {
+    margin-top: 4em;
+  }
+}
+
+/*   SMALL TO MEDIUM DEVICES   */
+@media (min-width: 599px) and (max-width: 900px) {
+  .blog-wrapper {
+    grid-template-columns: 490px;
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar"
+      "footer";
+    font-size: 0.8em;
+  }
+
+  .slideshow-container {
+    margin-bottom: 5em;
+  }
+
+  .dot {
+    margin-top: 6em;
+  }
+}
+
+/*   DESKTOP  */
+@media (min-width: 901px) {
+  .blog-wrapper {
+    grid-template-columns: 25% 20% 20% 20%;
+    grid-template-areas:
+      "header header header header"
+      "sidebar content content content"
+      "footer footer footer footer";
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .sidebar {
+    height: 95%;
+    margin-right: 1em;
+  }
+
+  .slideshow-container {
+    margin-bottom: 9em;
+  }
+
+  .numbertext {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,34 @@
+/*  XSMALL & SMALL DEVICES   */
+
+@media (min-width: 320px) and (max-width: 598px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*   SMALL TO MEDIUM DEVICES   */
+
+@media (min-width: 599px) and (max-width: 900px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/*   DESKTOP  */
+
+@media (min-width: 901px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    width: 300px;
+  }
+}

@@ -1,0 +1,10 @@
+.firstnav{
+    display: flex;
+    height: 15vh;
+    flex-direction: column;
+    margin: 5px auto;
+    width: 100%;
+    background: rgba(100,100,50,0.5);
+
+    
+}
