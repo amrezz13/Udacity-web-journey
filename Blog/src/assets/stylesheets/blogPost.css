@@ -1,0 +1,98 @@
+.blogpost-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header"
+    "author author"
+    "content content"
+    "like share";
+    padding: 5px 15px;
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+}
+
+.author {
+    grid-area: author;
+    place-self: start center;
+    width: 170px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    grid-area: content;
+}
+
+.like {
+    grid-area: like;
+}
+
+.share {
+    grid-area: share;
+    justify-self: end;
+}
+
+.info > h1 {
+    font-size: 1em;
+    color: black
+} 
+
+.info > p {
+    color: #61F2FF;
+    margin: 5px;
+    font-size: 0.8em;
+}
+
+.avatar > img {
+    width: 100%;
+    height: 8em;
+    border: 1px solid #FFCFAD;
+    border-radius: 10px 30px 0px 0px;
+}
+
+figure {
+    float: left;
+    shape-outside: circle();
+    margin: 30px 30px 30px 0;
+}
+
+figcaption {
+    text-align: center;
+    color: #FFCFAD;
+    font-size: 0.7em;
+}
+
+figure > img {
+    width: 170px;
+    height: 170px;
+    border: 1px solid #FFCFAD;
+    border-radius: 50%;
+}
+
+.like > a > img {
+    width: 20px;
+    height: 20px;
+}
+
+.share > a > img {
+    width: 30px;
+    height: 30px;
+}
+
+@media(min-width: 768px) {
+    .blogpost-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header header header header author"
+        "content content content content content author"
+        "like . . . share .";
+    }
+}
