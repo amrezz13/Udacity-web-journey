@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
 @import url(https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap);
 @import "nav.css";
-
+@import "layout.css";
+@import "footer.css";
+@import "cards.css";
+@import "blog.css";
 body {
     margin: 0%;
     margin-top: 3px;
