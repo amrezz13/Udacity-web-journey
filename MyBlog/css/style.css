@@ -5,7 +5,10 @@
 @import "footer.css";
 @import "cards.css";
 @import "blog.css";
+
 body {
+  font-family: 'Qahiri', sans-serif;
+
     margin: 0%;
     margin-top: 3px;
 }
